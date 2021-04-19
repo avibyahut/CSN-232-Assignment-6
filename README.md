@@ -31,3 +31,11 @@ Writer function
 - Critical section : Writer modifies the shared data in this section.
 - Exit section : This section releases the aquired semaphores.
   - Writer releases the resource SEMAPHORE.
+
+
+Main function
+- It takes number of readers and writers as input from the user.
+- Then it creates required number of threads followed by initialisation of semaphores.
+- It then initialises reader threads with reader function and writer threads with writer function.
+- Then, all threads are joined back to the parent thread.
+- After the execution, all initialized semaphores are destroyed.
